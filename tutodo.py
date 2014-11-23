@@ -6,9 +6,9 @@ api = restful.Api(app)
 
 class Tasks(restful.Resource):
     def get(self):
-        return "All Task"
-
-api.add_resource(Task,'/tasks')
+        return "Hello Tasks World"
+    
+api.add_resource(Tasks,'/tasks')
 
 if __name__ == '__main__':
     app.run(debug=True)
